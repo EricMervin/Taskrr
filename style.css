@@ -1,0 +1,901 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    /* cursor: none; */
+    scroll-behavior: smooth;
+}
+
+::selection{
+    background: #f0b9ff70;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #11111190; 
+    -webkit-transition: background 1s;
+    transition: background 1s;
+}
+
+/* Header  */
+
+.header{
+    background-color: white;
+    height: 206px;
+    width:100%;
+}
+
+.logo{
+    line-height: 206px;
+    margin:0 120px 0 140px;
+    position: relative;
+}
+
+.logo img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    content:url("assets/logo.png");
+}
+
+.header ul {
+    float:right;
+    margin-right:140px;
+}
+
+.header ul li {
+    display: inline-block;
+    line-height: 206px;
+    margin: 0 40px;
+}
+
+.header ul li a {
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    font: normal normal normal 20px/110px 'Graphik';
+    letter-spacing: -1.6px;
+    color: #D996E9;
+    transition: all .3s ease 0s;
+}
+
+.header li .a:after {
+    content: "";
+    position: absolute;
+    background-color: #D996E9;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: width 0.2s ease-in-out;
+}
+
+.header li .a:hover:after {
+    width: 70%;
+}
+
+.header li .cta {
+    padding: 15px 42px;
+    background: transparent linear-gradient(90deg, #D993EA 0%, #D6B8DD 100%) 0% 0% no-repeat padding-box;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+    font: normal normal normal 18px/21px 'Graphik';
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.checkbtn{
+    font-size: 24px;
+    color: #111;
+    float:right;
+    line-height: 206px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    margin: 10px 140px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-section .left{
+    margin-right: auto;
+}
+
+.hero-section .left h1{
+    font: normal normal normal 120px/110px 'Graphik';
+    color: #707070;
+    letter-spacing: -9.6px;
+    width: 72%
+}
+
+.hero-section .left .sub-text-1 {
+    margin-top: 60px;
+}
+
+.hero-section .left .sub-text-1 h3{
+    text-align: left;
+    font: normal normal 300 30px/36px 'Lato';
+    letter-spacing: 0px;
+    color: #989898;
+    line-height: 100%;
+    width: 60%;
+}
+
+.hero-section .left .sub-text-1 h3 span{
+    padding-top: -10px;
+    text-align: left;
+    font: italic normal 100 30px/36px 'Lato';
+    letter-spacing: 0px;
+    color: #989898;
+}
+
+.hero-section .left .sub-text-2 {
+    margin-top: 60px;
+    overflow: auto;
+    width: 53%
+}
+
+.hero-section .left .sub-text-2 .text-content {
+    padding-right: -100px;
+}
+
+.hero-section .left .sub-text-2 .text-content p{
+    text-align: left;
+    font: normal normal 700 24px/28px 'Lato';
+    letter-spacing: 0px;
+    color: #D895E9;
+    width: 90%
+}
+
+.hero-section .left .sub-text-2 .thum{
+    float: right;
+    margin-top: -48px;
+}
+
+.hero-section .left .sub-text-2 .thum img {
+    display: block;
+}
+
+.hero-section .right img{
+    padding-right: 12px;
+    padding-top: 54px;
+    max-width:100%;
+    height:auto;
+}
+
+/* Strip CSS */
+.strip{
+    background: #F8F8F8;
+    margin-top: 240px;
+    padding: 54px 240px;
+}
+
+.strip .swipe {
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+}
+
+.strip ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.strip ul li {
+    font: normal normal 700 30px/36px Lato;
+    letter-spacing: 0px;
+    color: #959595;
+}
+
+/* Feature Section */
+
+.feature-section {
+    position: relative;
+    background: transparent linear-gradient(250deg, #F8D65970 0%, #DE91EF70 37%, #9B9BBC70 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 7px 10px 10px #00000012;
+    margin: 72px 81px;
+    border-radius: 33px;
+    padding: 72px 90px;
+}
+
+.feature-section h1 {
+    width: 65%;
+    font: normal normal 700 40px/48px 'Lato';
+    color: #ffffff;
+}
+
+.feature-section .illus {
+    float: right;
+    margin: auto;
+}
+
+.feature-section .illus img{
+    float: right;
+    height:auto;
+    max-width: 90%;
+}
+
+.feature-section .feature-list {
+    list-style: none;
+    margin-top: 70px;
+}
+
+.feature-section .feature-list li {
+    background: #ffffffd8;
+    border-radius: 21px;
+    padding: 30px 27px 30px 33px;
+    margin-bottom: 40px;
+    width: 46%;
+    transition: transform .35s ease-in-out;
+    backdrop-filter: blur(40px)
+}
+
+.feature-section .feature-list li:hover {
+    transform: translateY(-6px) scale(1.02);
+}
+
+.feature-section .feature-list li:last-child{
+    margin-bottom: 0px;
+}
+
+.feature-section .feature-list li .icon{
+    margin-top: -39px;
+    float:right;
+}
+
+.feature-section .feature-list li .icon img {
+    max-width:100%;
+    height:auto;
+}
+
+.feature-section .feature-list li .text{
+    font: normal normal 400 25px/30px 'Lato';
+    color: #989898;
+    margin-right: 72px;
+}
+
+/* FAQs Section */
+.faq-section{
+    margin-top: 108px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.faq-section .left{
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+}
+
+.faq-section h1 {
+    font: normal normal 700 50px/60px Lato;
+    color: #BEBEBE;
+}
+
+.faq-section .question {
+    font: normal normal 700 30px/36px Lato;
+    color: #000000; 
+    margin-top: 70px;
+}
+
+.faq-section .answer{
+    margin-top: 40px;
+    font: normal normal 300 21px/24px Lato;
+    color: #707070;
+    line-height: 1.7;
+    width: 87%;
+}
+
+/* Footer */
+.footer {
+    margin-top: 180px;
+    padding: 0 72px;
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    background: transparent linear-gradient(263deg, #FF958B 0%, #A874E8 65%, #373740 100%) 0% 0% no-repeat padding-box;
+}
+
+.footer .left {
+    margin-right: auto;
+    margin-top: 54px;
+}
+
+.footer .left h3 {
+    font: normal normal bold 30px Helvetica;
+    letter-spacing: -1.2px;
+}
+
+.footer .left h3 span{
+    font: normal normal 300 30px Helvetica;
+    letter-spacing: -1.2px;
+}
+
+.footer .left ul {
+    list-style: none;
+}
+
+.footer .left ul li {
+    position: relative;
+    display: inline-block;
+    padding: 21px 72px 0px 0px;
+}
+
+.footer .left ul li a {
+    text-transform: uppercase;
+    font: normal normal normal 15px Graphik;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+
+.footer .right{
+    margin-top: 54px;
+}
+
+.footer .right h3 {
+    font: normal normal 700 30px Lato;
+    color: #FFFFFF;
+}
+
+.footer .right ul {
+    margin-top: 21px;
+    float: right;
+    list-style: none;
+}
+
+.footer .right ul li {
+    display:inline-block
+}
+
+.footer .right ul li:first-child{
+    font: normal normal normal 15px Graphik;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+
+.footer .right ul li:first-child span{
+    font: normal normal 700 15px Graphik;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+
+/* Cursor CSS */
+/* .cursor {
+    position: fixed; 
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #11111130;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: background .05s ease;
+}*/
+
+@media screen and (max-width: 1519px) {
+    /* Hero Section */
+    .hero-section{
+        margin: 20px 140px;
+    }
+    .hero-section .left h1{
+        font: normal normal normal 108px/100px 'Graphik';
+        width: 90%
+    }
+    .hero-section .left .sub-text-1 {
+        margin-top: 54px;
+    }
+    .hero-section .left .sub-text-1 h3{
+        font: normal normal 300 27px/32px 'Lato';
+    }
+    .hero-section .left .sub-text-2{
+        margin-top: 54px;
+        width: 80%
+    }
+    .hero-section .right img{
+        padding-top: 48px;
+    }
+
+    /* Strip Section */
+    .strip{
+        padding: 54px 180px;
+    }
+    .strip ul li {
+        font: normal normal 700 27px/32px Lato;
+    }
+
+    /* Feature Section */
+    .feature-section {
+        padding: 66px 60px;
+    }
+    .feature-section h1 {
+        font: normal normal 700 33px/42px 'Lato';
+    }
+
+    .feature-section .feature-list li {
+        width: 53%
+    }
+
+    .feature-section .feature-list li .text{
+        font: normal normal 400 21px/27px 'Lato';
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .header ul li {
+        margin: 0 18px;
+    }
+    .header ul li a {
+        font: normal normal normal 18px 'Graphik';
+    }
+}
+
+@media (max-width: 982px) {
+    .checkbtn{
+        display: block;
+        line-height: 206px;
+        margin-right: 140px;
+        color: white;
+    }
+
+    .logo img {
+        content:url("assets/logo-m.png");
+    }
+
+    .header{
+        background: transparent linear-gradient(90deg, #D993EA 0%, #D6B8DD 100%) 0% 0% no-repeat padding-box;
+    }
+
+    /* .header ul{
+        position: fixed;
+        width: 100%;
+        height: 20vh;
+        background-color: yellow;
+        top: 206px;
+        left:-100%;
+        text-align: center;
+        transition: all .3s ease;
+        opacity: 0;
+    }
+
+    .header ul li {
+        display: block;
+    }
+
+    .header ul li a {
+        font: normal normal normal 15px/72px 'Graphik';
+    }
+
+    #check:checked ~ ul {
+        left:0;
+        opacity: 1;
+    } */
+
+
+    .header ul{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: transparent linear-gradient(89deg, #D993EA 0%, #D6B8DD 100%) 0% 0% no-repeat padding-box;
+        top: 150px;
+        left:-100%;
+        margin-right: 0px;
+        z-index: 1;
+        text-align: center;
+        transition: all .3s ease;
+        opacity: 0;
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+
+    .header ul li {
+        display: block;
+        line-height: 0px;
+    }
+
+    .header ul li a {
+        font: normal normal 400 20px/110px Graphik;
+        letter-spacing: -1.6px;
+        color: #FFFFFF;
+    }
+
+    .header ul li a:last-child{
+        padding-top: 36px;
+    }
+
+    .header ul li .cta{
+        font: normal normal 400 30px/110px Graphik;
+        background: none;
+    }
+
+    .header li .cta:after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 90px;
+    }
+
+    .header li .a:hover:after {
+        width: 0%;
+    }
+
+    #check:checked ~ ul {
+        left:0;
+        opacity: 1;
+    }
+}
+
+/* @media (max-width: 952px) {
+    nav ul li a {
+        font: normal normal normal 15px/72px 'Graphik';
+    }
+} */
+
+/* @media screen and (max-width: 767px){
+    .header {
+        background: transparent linear-gradient(90deg, #D993EA 0%, #D6B8DD 100%) 0% 0% no-repeat padding-box;
+        padding: 27px 20px;
+    }
+
+    .nav_links{
+        display: none;
+    }
+    .cta button {
+        display: none;
+    }
+
+    .header .hamburger {
+        display: block;
+        margin-right: 0;
+        color: white;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .logo-m{
+        margin-right: auto;
+        display: block;
+    }
+} */
+
+@media (max-width: 375px){
+    .header{
+        height: 80px;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .checkbtn{
+        display: block;
+        line-height: 80px;
+        margin-right: 20px;
+        color: white;
+    }
+
+    .logo{
+        max-height: 24px;
+        margin: 0 20px;
+        line-height: 80px;
+    }
+
+    .hero-section{
+        margin: 0;
+        padding-top: 102px;
+        display: block;
+    }
+
+    .hero-section .left{
+        float: none;
+        padding:30px 0 0 40px;
+        margin-right: 0;
+    }
+
+    .hero-section .left h1{
+        font: normal normal 300 54px/54px Graphik;
+        letter-spacing: -4.32px;
+        width: 80%;
+    }
+
+    .hero-section .right{
+        float: none;
+        margin-top: -200px;
+    }
+
+    .hero-section .right img{
+        margin: -750px 26px 0 26px;
+        max-width:320px;
+        height: auto;
+        padding: 0;
+    }
+
+    .hero-section .left .sub-text-1 {
+        margin-top: 310px;
+    }
+
+    .hero-section .left .sub-text-1 h3{
+        font: normal normal normal 20px/24px Lato;
+        width: 100%;
+    }
+
+    .hero-section .left .sub-text-1 h3 span{
+        font: italic normal 300 20px/24px Lato;
+    }
+
+    .hero-section .left .sub-text-2{
+        margin-top: 60px;
+        width: 85%;
+    }
+
+    .hero-section .left .sub-text-2 .text-content{
+        padding-right: 12px;
+    }
+
+    .hero-section .left .sub-text-2 .text-content p{
+        font: normal normal 900 15px/16px Lato;
+    }
+
+    .hero-section .left .sub-text-2 .thum{
+        float: right;
+        margin-top: -28px;
+    }
+
+    .hero-section .left .sub-text-2 .thum img {
+        display: block;
+        max-height: 30px;
+        width: auto;
+    }
+
+    .strip{
+        position: relative;
+        margin-top: 310px;
+        padding: 24px 21px;
+        align-content: center;
+    }
+
+    .strip .swipe{
+        position: absolute;
+        display: block;
+        margin: -81px auto auto auto;
+        left: 0;
+        right: 0;
+    }
+
+    .strip .swipe a{
+        font: normal normal 900 13px/12px Lato;
+        letter-spacing: 1.4px;
+        color: #525252;
+    }
+
+    .strip ul li {
+        font: normal normal 600 10px/12px Lato;
+        text-align: center;
+    }
+
+    .feature-section {
+        margin: 15px 10px;
+        padding: 60px 22px;
+        box-shadow: 7px 10px 10px #00000012;
+        border-radius: 33px;
+    }
+
+    .feature-section h1{
+        float: left;
+        width: 35%;
+        font: normal normal 900 25px/30px Lato;
+    }
+    .feature-section .illus {
+        float: top;
+        margin-top: -210px;
+        margin-right: -5px;
+        margin-left: 10px;
+    }
+
+    .feature-section .illus img{
+        float: right;
+        height:auto;
+        max-width: 65%;
+    }
+
+    .feature-section .feature-list {
+        display: block;
+        list-style: none;
+        margin-top: 240px;
+    }
+
+    .feature-section .feature-list li{
+        width: 100%;
+        padding: 14px 13px 14px 15px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+    }
+
+    .feature-section .feature-list li:last-child{
+        margin-bottom: -20px;
+    }
+
+    .feature-section .feature-list li .text{
+        font: normal normal 400 11px/13px 'Lato';
+    }
+
+    .feature-section .feature-list li .icon{
+        margin-top: -24px;
+    }
+
+    .feature-section .feature-list li:nth-child(1) .icon{
+        margin-top: -17px;
+    }
+
+    .feature-section .feature-list li:nth-child(3) .icon{
+        margin-top: -18px;
+    }
+
+    .feature-section .feature-list li .icon img {
+        max-width:45%;
+        height:auto;
+    }
+
+    .faq-section{
+        margin: 72px 32px 0 32px;
+    }
+
+    .faq-section h1 {
+        font: normal normal 900 25px/30px Lato;
+    }
+
+    .faq-section .question{
+        font: normal normal 900 15px/18px Lato;
+        margin-top: 36px;
+    }
+
+    .faq-section .answer{
+        font: normal normal normal 10px/15px Lato;
+        margin-top: 20px;
+    }
+
+    .faq-section .left{
+        float: none;
+        width: 100%;
+    }
+
+    .footer {
+        padding: 27px 33px;
+        margin-top: 32px;
+        display: block;
+    }
+
+    .footer .left{
+        margin-top: 0px;
+    }
+
+    .footer .left h3 {
+        font: normal normal bold 15px Helvetica;
+        letter-spacing: -0.6px;
+    }
+
+    .footer .left h3 span{
+        font: normal normal 300 15px Helvetica; 
+        letter-spacing: -0.6px;  
+    }
+
+    .footer .left ul {
+        margin-top: 36px;
+        list-style: none;
+    }
+
+    .footer .left ul li {
+        display: inline-block;
+        padding-right: 21px;
+    }
+
+    .footer .left ul li a {
+        font: normal normal 300 10px Graphik;
+        letter-spacing: 0.2px;
+    }
+
+    .footer .right{
+        margin-top: -36px;
+    }
+    
+    .footer .right h3{
+        transform: translateY(-6px);
+        font: normal normal 900 15px 'Lato';
+    }
+
+    .footer .right ul {
+        margin-top: 60px;
+        float: none;
+    }
+
+    .footer .right ul li:first-child{
+        font: normal normal 300 10px Graphik;
+    }
+
+    .footer .right ul li:first-child span{
+        padding-left: 12px;
+        font: normal normal 300 10px Graphik;
+    }
+
+    .header ul{
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: transparent linear-gradient(89deg, #D993EA 0%, #D6B8DD 100%) 0% 0% no-repeat padding-box;
+        top: 80px;
+        left:-100%;
+        margin-right: 0px;
+        z-index: 1;
+        text-align: center;
+        transition: all .3s ease;
+        opacity: 0;
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+
+    .header ul li {
+        display: block;
+        line-height: 0px;
+    }
+
+    .header ul li a {
+        font: normal normal 400 20px/110px Graphik;
+        letter-spacing: -1.6px;
+        color: #FFFFFF;
+    }
+
+    .header ul li a:last-child{
+        padding-top: 36px;
+    }
+
+    .header ul li .cta{
+        font: normal normal 400 30px/110px Graphik;
+        background: none;
+    }
+
+    .header li .cta:after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 90px;
+    }
+
+    .header li .a:hover:after {
+        width: 0%;
+    }
+
+    #check:checked ~ ul {
+        left:0;
+        opacity: 1;
+    }
+}
