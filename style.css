@@ -586,7 +586,7 @@
     }
 } */
 
-@media (max-width: 375px){
+@media (max-width: 500px){
     .header{
         height: 80px;
         position: fixed;
