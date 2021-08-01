@@ -586,7 +586,7 @@
     }
 } */
 
-@media (max-width: 375px){
+@media (max-width: 500px){
     .header{
         height: 80px;
         position: fixed;
@@ -630,7 +630,10 @@
     }
 
     .hero-section .right img{
-        margin: -750px 26px 0 26px;
+        left: 0px;
+        right: 0px;
+        display: block;
+        margin: -420px auto 0 auto;
         max-width:320px;
         height: auto;
         padding: 0;
